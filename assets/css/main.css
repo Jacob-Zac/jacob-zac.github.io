@@ -3775,3 +3775,8 @@ li a.button {
 		margin: 0 auto;
 		width: 700px;
 	  }
+	  @media only screen and (max-width: 600px) {
+		.video video {
+		  width: 100%; /* Adjust the width as desired for mobile devices */
+		}
+	  }
