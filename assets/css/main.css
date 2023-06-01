@@ -3815,7 +3815,7 @@ li a.button {
 	margin: auto;
 	display: block;
 	width: 100%;
-	max-width: 1200px;
+	max-width: 900px;
   }
   
   /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -3844,8 +3844,8 @@ li a.button {
   /* The Close Button */
   .close {
 	position: absolute;
-	top: 45px;
-	right: 25px;
+	top: 65px;
+	right: 45px;
 	color: #f1f1f1;
 	font-size: 40px;
 	font-weight: bold;
