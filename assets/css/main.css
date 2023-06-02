@@ -3070,7 +3070,7 @@ body {
 		justify-content: space-between;
 		background-color: rgba(32, 26, 23, 0.8);
 		background-attachment: scroll,								scroll;
-		background-image: linear-gradient(rgba(8, 3, 0, 0.25), rgba(0, 0, 0, 0.30)),url("../../images/logo.jpg");
+		background-image: linear-gradient(rgba(8, 3, 0, 0.25), rgba(0, 0, 0, 0.35)),url("../../images/logo.jpg");
 		background-size: auto,								120%;
 		height: 100%;
 		left: 0;
