@@ -1,58 +1,21 @@
 <!DOCTYPE HTML>
 
 <html>
-	
 	<head>
-		
 		<link rel="icon" href="images/favicon.png" type="image/x-icon">
 		<title>Jacob's Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-	    <style>
-			body.is-preload {
-				overflow: hidden; /* Hide scrollbars while preloading */
-			}
-	
-			#preloader {
-				position: fixed;
-				top: 0;
-				left: 0;
-				width: 100vw; /* Set width to viewport width */
-				height: 100vh;
-				background-color: #f5f5f5;
-				z-index: 9999;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-			}
-	
-			#wrapper {
-				display: none; /* Hide the wrapper initially */
-			}
-		</style>
 	</head>
 	<body class="is-preload">
-		<div id="preloader">
-			<lottie-player src="https://assets7.lottiefiles.com/packages/lf20_mrg9xhbm.json" mode="bounce" background="rgba(0, 0, 0, 0)" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-		</div>
-	
-		<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-		<script>
-			// Remove preloader after 2 seconds
-			setTimeout(function(){
-				document.getElementById("preloader").style.display = "none";
-				document.getElementById("wrapper").style.display = "block";
-				document.body.classList.remove("is-preload");
-			}, 2000);
-		</script>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Header -->
 					<header id="header">
-						<h1><a href="index.html">Jacob's UX Portfolio</a></h1>
+						<h1><a href="home.html">Jacob's UX Portfolio</a></h1>
 						<nav class="links">
 							<ul>
 								<li><a href="https://drive.google.com/file/d/1itsKc6sWVjm6B1sdSbC5BEjxUJ0Ri-jR/view" target="_blank">Resume</a></li>
@@ -176,5 +139,4 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
-	
 </html>
