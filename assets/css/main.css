@@ -1788,7 +1788,7 @@ input, select, textarea {
   
   .author img {
 	border-radius: 100%;
-	width: 6em;
+	width: 4em;
   }
   
   .author:hover .name {
