@@ -1788,7 +1788,7 @@ input, select, textarea {
   
   .author img {
 	border-radius: 100%;
-	width: 4em;
+	width: 6em;
   }
   
   .author:hover .name {
@@ -2576,10 +2576,10 @@ input, select, textarea {
 		}
 
 			.post > footer .actions {
-				-moz-flex-grow: 1;
-				-webkit-flex-grow: 1;
-				-ms-flex-grow: 1;
-				flex-grow: 1;
+				-moz-flex-grow: 4;
+				-webkit-flex-grow: 4;
+				-ms-flex-grow: 4;
+				flex-grow: 4;
 			}
 
 			.post > footer .stats {
@@ -3236,7 +3236,7 @@ body {
 		text-align: center;
 	}
 	#footer .icons a {
-		font-size: 20px; /* Adjust the size as desired */
+		font-size: 25px; /* Adjust the size as desired */
 	  }
 	/* #Button */
 	
