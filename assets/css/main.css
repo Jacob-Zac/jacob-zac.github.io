@@ -3865,3 +3865,34 @@ li a.button {
 	  width: 100%;
 	}
   }
+  /* DEMO-SPECIFIC STYLES */
+.Kontainer{
+  display: inline-block;
+}
+.typed-out {
+	overflow: hidden;
+	border-right: .15em solid orange;
+	white-space: nowrap;
+	animation: typing 2s forwards,
+	  blink-caret .5s step-end infinite;
+	font-size: 1.1em;
+	width: 0;
+	color: #3c3b3b;
+	font-family: "Raleway", Helvetica, sans-serif;
+	font-weight: 800; /* Updated font weight */
+	text-transform: uppercase;
+	letter-spacing: 0.25em;
+		line-height: 1.65;
+}
+  
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+	from, to { border-color: transparent }
+	50% { border-color: orange }
+  }
+  
+  
