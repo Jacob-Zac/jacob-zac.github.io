@@ -3871,9 +3871,9 @@ li a.button {
 }
 .typed-out {
 	overflow: hidden;
-	border-right: .15em solid orange;
+	border-right: .15em solid var(--color-tiffany);
 	white-space: nowrap;
-	animation: typing 2s forwards,
+	animation: typing 3s forwards,
 	  blink-caret .5s step-end infinite;
 	font-size: 1.1em;
 	width: 0;
@@ -3892,7 +3892,7 @@ li a.button {
   /* The typewriter cursor effect */
   @keyframes blink-caret {
 	from, to { border-color: transparent }
-	50% { border-color: orange }
+	50% { border-color: var(--color-tiffany) }
   }
   
   
