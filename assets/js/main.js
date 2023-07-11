@@ -39,6 +39,53 @@ for (var i = 0; i < images.length; i++) {
     captionText.innerHTML = this.alt;
   }
 }
+// JavaScript for slideshow functionality
+var slideIndex = 0;
+var slides = document.getElementsByClassName("slide");
+var dots = document.getElementsByClassName("dot");
+
+showSlide(slideIndex);
+
+function showSlide(index) {
+  if (index < 0) {
+    slideIndex = slides.length - 1;
+  } else if (index >= slides.length) {
+    slideIndex = 0;
+  } else {
+    slideIndex = index;
+  }
+
+  for (var i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+
+  for (var i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+
+  slides[slideIndex].style.display = "block";
+  dots[slideIndex].className += " active";
+}
+
+function prevSlide() {
+  showSlide(slideIndex - 1);
+}
+
+function nextSlide() {
+  showSlide(slideIndex + 1);
+}
+
+// Event listeners for navigation arrows
+document.querySelector(".prev").addEventListener("click", prevSlide);
+document.querySelector(".next").addEventListener("click", nextSlide);
+
+// Event listeners for navigation bubbles
+for (var i = 0; i < dots.length; i++) {
+  dots[i].addEventListener("click", function() {
+    var dotIndex = Array.prototype.indexOf.call(dots, this);
+    showSlide(dotIndex);
+  });
+}
 
 var span = document.getElementsByClassName("close")[0];
 
