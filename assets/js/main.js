@@ -5,7 +5,6 @@
 		$post = $('#post'),
 		$sidebar = $('#sidebar'),
 		$main = $('#main');
-		$main1 = $('#main1');
 	// Breakpoints.
 		breakpoints({
 			xlarge:   [ '1281px',  '1680px' ],
