@@ -2455,28 +2455,43 @@ input, select, textarea {
 
 /* Icons */
 
-	ul.icons {
-		cursor: default;
-		list-style: none;
-		padding-left: 0;
+ul.icons {
+	cursor: default;
+	list-style: none;
+	padding-left: 0;
+  }
+  
+  ul.icons li {
+	display: inline-block;
+	padding: 0 1em 0 0;
+  }
+  
+  ul.icons li:last-child {
+	padding-right: 0;
+  }
+  
+  ul.icons li > * {
+	border: 0;
+  }
+  
+  ul.icons li > * .label {
+	display: none;
+  }
+  
+  @media screen and (max-width: 767px) {
+	/* Adjust styles for smaller screens */
+	ul.icons li {
+	  padding: 0 0.5em 0 0;
 	}
-
-		ul.icons li {
-			display: inline-block;
-			padding: 0 1em 0 0;
-		}
-
-			ul.icons li:last-child {
-				padding-right: 0;
-			}
-
-			ul.icons li > * {
-				border: 0;
-			}
-
-				ul.icons li > * .label {
-					display: none;
-				}
+  }
+  
+  @media screen and (min-width: 768px) {
+	/* Adjust styles for larger screens */
+	ul.icons li {
+	  padding: 0 2em 0 0;
+	}
+  }
+  
 
 /* Post */
 
@@ -2697,7 +2712,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 736px) {
+		@media screen and (max-width: 1200px) {
 
 			.post {
 				padding: 1.5em 1.5em 3em 1.5em ;
@@ -2716,12 +2731,16 @@ input, select, textarea {
 					.post > header .title h2 {
 						font-size: 1.1em;
 					}
-					@media screen and (max-width: 736px) {
+					@media screen and (min-width: 1201px) {
 						.post .meta img {
 						  display: none;
 						}
 					  }
-		}
+					  @media screen and (max-width: 760px) {			  
+						.post .meta img {
+							display: none;
+						  }
+						}}
 
 		@media screen and (max-width: 480px) {
 
@@ -2953,7 +2972,13 @@ body {
 			opacity: 1;
 			padding: 0 0.5em 0 0;
 		}
+		@media screen and (max-width: 1200px) {
 
+			#header .links {
+				display: none;
+			}
+	
+		}
 	@media screen and (max-width: 980px) {
 
 		#header .links {
@@ -3070,7 +3095,7 @@ body {
 		justify-content: space-between;
 		background-color: rgba(32, 26, 23, 0.8);
 		background-attachment: scroll,								scroll;
-		background-image: linear-gradient(rgba(8, 3, 0, 0.55), rgba(0, 0, 0, 0.30)),url("../../images/logo.jpg");
+		background-image: linear-gradient(rgba(8, 3, 0, 0.55), rgba(0, 0, 0, 0.20)),url("../../images/logo.jpg");
 		background-size: auto,								120%;
 		height: 100%;
 		left: 0;
